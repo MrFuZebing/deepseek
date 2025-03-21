@@ -2,7 +2,7 @@
 const response = await fetch('/api/chat', {
       method: 'POST',
         headers: {
-                'Authorization': `Bearer ${sk-aff08715a6c24c39bc85183894bebdd5}`,
+                'Authorization': `Bearer ${Your_APIKEY}`,
                     'Content-Type': 'application/json'
         },
           body: JSON.stringify({ 
@@ -15,7 +15,7 @@ const response = await fetch('/api/chat', {
 def chat():
     resp = requests.post( 
             "https://api.deepseek.com/v1/chat/completions", 
-                    headers={"Authorization": f"Bearer {sk-aff08715a6c24c39bc85183894bebdd5}"},
+                    headers={"Authorization": f"Bearer {Your_APIKEY}"},
                             json=request.json, 
                                     stream=True 
                                         )
